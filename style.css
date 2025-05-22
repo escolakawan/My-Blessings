@@ -1,0 +1,48 @@
+/* Definição de variáveis globais */
+:root {
+  --cor-fundo: #01080E;
+  --cor-principal: #0B0D20;
+  --cor-secundaria: #212333;
+  --cor-destaque: #2BDEFD;
+  --cor-texto: #D7F9FF;
+}
+
+/* Configuração do corpo da página */
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Estilização da caixa principal */
+.caixa-principal {
+  background-color: var(--cor-principal);
+  width: 90%;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Configuração do título */
+h1 {
+  color: var(--cor-destaque);
+}
+/* Estilização padrão dos botões */
+button {
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Efeito ao passar o mouse */
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
+}
